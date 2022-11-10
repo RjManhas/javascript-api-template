@@ -1,7 +1,8 @@
 import {Express, Request, Response, NextFunction} from 'express'
 
 function routes(app: Express){
-    app.get('/api/books/test', async (req: Request< {}, {name: string}, {}, {}>, res: Response, next: NextFunction) => {
+    // app.get('/api/books/test', async (req: Request< {}, {name: string}, {}, {}>, res: Response, next: NextFunction) => {
+        app.get('/api/books/test', async (req: Request< {}, {name: string}, {}, {}>, res: Response, next: NextFunction) => {
         try {
             console.log("hi");
             console.log(req.body);  
